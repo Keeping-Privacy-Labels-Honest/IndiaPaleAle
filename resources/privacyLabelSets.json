@@ -1,0 +1,112 @@
+[
+  {
+    "label" : "books",
+    "absolutePath" : "/home/simon/sciencystuff/leaky-smartphones/privacyLabels/books/",
+    "expectedCount" : 100
+  },
+  {
+    "label" : "business",
+    "absolutePath" : "/home/simon/sciencystuff/leaky-smartphones/privacyLabels/business/",
+    "expectedCount" : 100
+  },
+  {
+    "label" : "education",
+    "absolutePath" : "/home/simon/sciencystuff/leaky-smartphones/privacyLabels/education/",
+    "expectedCount" : 100
+  },
+  {
+    "label" : "entertainment",
+    "absolutePath" : "/home/simon/sciencystuff/leaky-smartphones/privacyLabels/entertainment/",
+    "expectedCount" : 100
+  },
+  {
+    "label" : "finance",
+    "absolutePath" : "/home/simon/sciencystuff/leaky-smartphones/privacyLabels/finance/",
+    "expectedCount" : 100
+  },
+  {
+    "label" : "foodAndDrink",
+    "absolutePath" : "/home/simon/sciencystuff/leaky-smartphones/privacyLabels/foodAndDrink/",
+    "expectedCount" : 100
+  },
+  {
+    "label" : "games",
+    "absolutePath" : "/home/simon/sciencystuff/leaky-smartphones/privacyLabels/games/",
+    "expectedCount" : 100
+  },
+  {
+    "label" : "health",
+    "absolutePath" : "/home/simon/sciencystuff/leaky-smartphones/privacyLabels/health/",
+    "expectedCount" : 100
+  },
+  {
+    "label" : "lifestyle",
+    "absolutePath" : "/home/simon/sciencystuff/leaky-smartphones/privacyLabels/lifestyle/",
+    "expectedCount" : 100
+  },
+  {
+    "label" : "medical",
+    "absolutePath" : "/home/simon/sciencystuff/leaky-smartphones/privacyLabels/medical/",
+    "expectedCount" : 100
+  },
+  {
+    "label" : "music",
+    "absolutePath" : "/home/simon/sciencystuff/leaky-smartphones/privacyLabels/music/",
+    "expectedCount" : 100
+  },
+  {
+    "label" : "navigation",
+    "absolutePath" : "/home/simon/sciencystuff/leaky-smartphones/privacyLabels/navigation/",
+    "expectedCount" : 100
+  },
+  {
+    "label" : "news",
+    "absolutePath" : "/home/simon/sciencystuff/leaky-smartphones/privacyLabels/news/",
+    "expectedCount" : 100
+  },
+  {
+    "label" : "photoAndVideo",
+    "absolutePath" : "/home/simon/sciencystuff/leaky-smartphones/privacyLabels/photoAndVideo/",
+    "expectedCount" : 100
+  },
+  {
+    "label" : "productivity",
+    "absolutePath" : "/home/simon/sciencystuff/leaky-smartphones/privacyLabels/productivity/",
+    "expectedCount" : 100
+  },
+  {
+    "label" : "references",
+    "absolutePath" : "/home/simon/sciencystuff/leaky-smartphones/privacyLabels/references/",
+    "expectedCount" : 100
+  },
+  {
+    "label" : "shopping",
+    "absolutePath" : "/home/simon/sciencystuff/leaky-smartphones/privacyLabels/shopping/",
+    "expectedCount" : 100
+  },
+  {
+    "label" : "socialMedia",
+    "absolutePath" : "/home/simon/sciencystuff/leaky-smartphones/privacyLabels/socialMedia/",
+    "expectedCount" : 100
+  },
+  {
+    "label" : "sports",
+    "absolutePath" : "/home/simon/sciencystuff/leaky-smartphones/privacyLabels/sports/",
+    "expectedCount" : 100
+  },
+  {
+    "label" : "travel",
+    "absolutePath" : "/home/simon/sciencystuff/leaky-smartphones/privacyLabels/travel/",
+    "expectedCount" : 100
+  },
+  {
+    "label" : "utilities",
+    "absolutePath" : "/home/simon/sciencystuff/leaky-smartphones/privacyLabels/utilities/",
+    "expectedCount" : 100
+  },
+  {
+    "label" : "wheather",
+    "absolutePath" : "/home/simon/sciencystuff/leaky-smartphones/privacyLabels/wheather/",
+    "expectedCount" : 100
+  }
+]
