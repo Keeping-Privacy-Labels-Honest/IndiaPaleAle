@@ -36,7 +36,7 @@ You have three different features here:
 2. extract meta information of an IPA or a folder full of IPAs
 3. download privacy labels
 
-### 3u interaction
+### 3u
 ```
 ./run.sh 3u -h
 usage: ... 3u {-h}  statistics get-privacy-labels download
@@ -53,3 +53,27 @@ interaction with the 3u web API
 
           download download json files for category and page
  ```
+
+#### statistics
+
+```
+./run.sh 3u statistics <folder>
+```
+
+This will read in all .json in the given folder (downloaded via `download` action) and give basic statistics on how many apps are contained and how many unique apps a re contained.
+
+#### get-privacy-labels
+
+```
+./run.sh 3u get-privacy-labels <folder>
+```
+
+This will read in all .json in the given folder (downloaded via `download` action) and download the given privacy labels.
+
+#### download
+
+```
+./run.sh 3u download <category> <until> <folder>
+```
+
+This will download all the apps (as json) of `category` (can be a single number, csv, or `all`) until page number `until` storing results in 
