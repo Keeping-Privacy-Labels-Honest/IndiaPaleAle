@@ -1,5 +1,10 @@
 # IndiaPaleAle
-This tool takes care of downloading 3u app ranking as well as the privacy labels from apple
+This tool takes care of downloading 3u app ranking as well as the privacy labels from apple.
+
+You can get a list of app ids via the `3u` action, or by using the `meta` action on a set of IPAs. 
+This list of app ids is then used in the `privacyLabels` action or if you want to use the jsons obtained via `3u` in the `get-privacy-labels` subaction to download the corresponding set of privacy labels.
+
+Our obtained set of privacy labels can be accessed [here](https://github.com/Keeping-Privacy-Labels-Honest/privacyLabels).
 
 ## Build
 
