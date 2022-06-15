@@ -12,7 +12,6 @@ libraryDependencies ++= Seq(
   "org.scalaj"             %% "scalaj-http"         % "2.4.2",
   "io.spray"               %%  "spray-json"         % "1.3.6",
   "com.nimbusds"           % "nimbus-jose-jwt"      % "9.8.1",
-  "de.tubs.ias"            %% "prettypicturemaker"  % "0.0.10"
 )
 
 ThisBuild / resolvers ++= Seq(

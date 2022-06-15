@@ -3,7 +3,7 @@ package de.tubs.ipa
 import de.halcony.argparse.{Parser, ParsingException, ParsingResult}
 import de.tubs.ipa.ThreeUDownloader.ThreeU
 import de.tubs.ipa.dataTypes.{IPAMeta, MetaBoolean, MetaDict, MetaInteger, MetaString, MetaUnknown}
-import de.tubs.ipa.privacyLabels.{PrivacyLabelSet, PrivacyLabels, Visualization}
+import de.tubs.ipa.privacyLabels.{PrivacyLabelSet, PrivacyLabels}
 import wvlet.log.LogSupport
 
 import java.io.{BufferedWriter, File, FileWriter}
@@ -49,43 +49,6 @@ object IPA extends LogSupport {
       pargv.get[ParsingResult => Unit]("func")(pargv)
     } catch {
       case _: ParsingException =>
-    }
-  }
-
-  private def generateVisualization(outFolder : String, setDescriptionJson : String) : Visualization = {
-    new Visualization(outFolder, PrivacyLabelSet.readInLabelList(setDescriptionJson))
-  }
-
-  private def translateActions(actionCsv : String) : List[String] = {
-    actionCsv.split(",").flatMap {
-      case "all" => List("purposes")
-      case x => List(x)
-    }.toList
-  }
-
-  private def plottingPrep(pargs : ParsingResult) : (Visualization,List[String]) = {
-    (generateVisualization(pargs.get[String]("outFolder"), pargs.get[String]("setDescriptionJson")),
-      translateActions(pargs.get[String]("which")))
-  }
-
-  private def plotAllSetsMain(pargs : ParsingResult) : Unit = {
-    val (visualization, plotActions) = plottingPrep(pargs)
-    plotActions.foreach {
-      case "types" => visualization.generateAllPrivacyCategoryStatistics()
-      case "types-purposes" => visualization.generateAllPrivacyTypePurposeStatistic()
-      case "types-data-categories" => visualization.generateAllPrivacyTypeDataCategories()
-      case "summary-data-categories" => visualization.generateSummaryPrivacyTypeDataCategoriesStatistic()
-    }
-  }
-
-  private def plotSingleSetMain(pargs : ParsingResult) : Unit = {
-    val (visualization, plotActions) = plottingPrep(pargs)
-    val label = pargs.get[String]("label")
-    plotActions.foreach {
-      case "types" => visualization.generateSinglePrivacyCategoryStatistics(label)
-      case "types-purposes" => visualization.generateSinglePrivacyTypePurposeStatistic(label)
-      case "types-data-categories" => visualization.generateSinglePrivacyTypeDataCategoriesStatistic(label)
-      case "summary-data-categories" => throw new RuntimeException("This action only makes sense for all")
     }
   }
 
