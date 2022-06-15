@@ -53,7 +53,7 @@ object ThreeU extends LogSupport {
   val parser: Parser = Parser("3u", "interaction with the 3u web API")
     .addSubparser(Parser(""))
     .addSubparser(
-      Parser("statistics", "")
+      Parser("statistics", "get statistics on the downloaded app list")
         .addPositional("folder", "the folder containing the jsons")
         .addDefault[ParsingResult => Unit]("func", statisticsMain))
     .addSubparser(
