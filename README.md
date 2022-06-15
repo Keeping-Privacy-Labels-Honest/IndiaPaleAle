@@ -77,3 +77,19 @@ This will read in all .json in the given folder (downloaded via `download` actio
 ```
 
 This will download all the apps (as json) of `category` (can be a single number, csv, or `all`) until page number `until` storing results in 
+
+### meta
+
+```
+./run.sh meta <elements> <path> [-e,--header]
+```
+
+Takes a csv list of `elements` naming the different attributes of an IPA (example see `runMetaDataExtraction.sh`) and goes through all IPA listed at `path` and prints out the retrieved elements. If `--header` or `-e` is provided the first line is a header line containing the order of the extracted elements.
+
+### privacyLabels
+
+```
+./run.sh privacyLabels download <csv> <out>
+```
+
+Downloads the privacy labels contained in the `csv`, the csv needs to have a header line and contain at least the row `itemId`. Easiest way to get that csv is to use the `meta` action on a set of IPAs combined with the `-e`  flag.
