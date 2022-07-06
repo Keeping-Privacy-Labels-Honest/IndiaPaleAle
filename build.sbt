@@ -69,7 +69,6 @@ checkstyleConfigLocation := CheckstyleConfigLocation.File("config/checkstyle/goo
 checkstyleSeverityLevel := Some(CheckstyleSeverityLevel.Info)
 
 import ReleaseTransformations._
-releasePublishArtifactsAction := PgpKeys.publishSigned.value
 releaseVersionBump := sbtrelease.Version.Bump.Bugfix
 
 releaseProcess := Seq[ReleaseStep](
